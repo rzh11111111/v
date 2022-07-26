@@ -1,14 +1,14 @@
- <template>
-   <div>{{ userStore.name }}</div>
-<div>login</div>
- </template>
+<template>
+    <h2> 这里是登录页面 </h2>
+    <br />
+    <router-link to="/">点击跳转至首页</router-link>
+    <br /><br />
+    <router-link to="/vueUse">点击跳转至vueUse页面</router-link>
+</template>
+<script lang="ts">
+    import { defineComponent } from 'vue';
 
- <script lang="ts" setup>
- import { useUserStore } from '@/store/user'
-
- const userStore = useUserStore()
- userStore.updateName('李四')
- </script>
-<style lang="scss">
- .root {}
-</style>
+    export default defineComponent({
+        name: 'LoginPage'
+    });
+</script>
