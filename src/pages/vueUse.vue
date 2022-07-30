@@ -4,19 +4,11 @@
     <router-link to="/">点击跳转至首页</router-link>
 </template>
 
-<script lang="ts">
-    import { defineComponent } from 'vue';
+<script lang="ts" setup>
     import { useMouse } from '@vueuse/core';
 
-    export default defineComponent({
-        name: 'VueUse',
-        setup() {
+   
             const { x, y } = useMouse();
 
-            return {
-                x,
-                y
-            };
-        }
-    });
+         
 </script>

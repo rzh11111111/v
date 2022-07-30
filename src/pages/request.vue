@@ -4,14 +4,11 @@
     <router-link to="/">点击跳转至首页</router-link>
     <button @click="requestRes()"></button>
 </template>
-<script lang="ts">
-    import { defineComponent } from 'vue';
+<script lang="ts" setup>
     import request from '@/utils/axios';
     import API from '@/api';
 
-    export default defineComponent({
-        name: 'RequestPage',
-        setup() {
+   
             const requestRes = async () => {
                 let result = await request({
                     url: '/api/xxx',
@@ -26,10 +23,5 @@
                 console.log(result);
             };
 
-            return {
-                requestRes,
-                requestResAPI
-            };
-        }
-    });
+           
 </script>

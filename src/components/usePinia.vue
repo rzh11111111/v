@@ -3,18 +3,11 @@
     <div>{{ userStore.name }}</div>
 </template>
 
-<script lang="ts">
-    import { defineComponent } from 'vue';
+<script lang="ts" setup>
     import { useUserStore } from '@/store/user';
 
-    export default defineComponent({
-        name: 'UsePinia',
-        setup() {
+    
             const userStore = useUserStore();
 
-            return {
-                userStore
-            };
-        }
-    });
+       
 </script>
