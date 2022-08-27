@@ -40,6 +40,16 @@ const routes: Array<RouteRecordRaw> = [
             requireAuth: true
         },
         component: () => import('@/pages/request.vue')
+    },
+    {
+        path: '/toref',
+        name: 'toref',
+        meta: {
+            title: 'toref demo',
+            keepAlive: true,
+            requireAuth: true
+        },
+        component: () => import('@/pages/toref.vue')
     }
 ];
 
