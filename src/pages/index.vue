@@ -9,9 +9,11 @@
     <router-link to="/request">点击跳转至request请求页面1</router-link>
     <br /><br />
     <router-link to="/toref">点击跳转至toref请求页面1</router-link>
+    <p>{{ checked }}</p>
 </template>
 
 <script lang="ts" setup>
     // import { Component } from 'vue';
     import UsePinia from '@/components/UsePinia.vue';
+    const checked = ref(true);
 </script>
