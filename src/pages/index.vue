@@ -10,6 +10,7 @@
     <br /><br />
     <router-link to="/toref">点击跳转至toref请求页面1</router-link>
     <p>{{ checked }}</p>
+    <router-link to="/defineprops">点击跳转至defineprops请求页面1</router-link>
 </template>
 
 <script lang="ts" setup>

@@ -50,6 +50,16 @@ const routes: Array<RouteRecordRaw> = [
             requireAuth: true
         },
         component: () => import('@/pages/toref.vue')
+    },
+    {
+        path: '/defineprops',
+        name: 'defineprops',
+        meta: {
+            title: '组件通信',
+            keepAlive: true,
+            requireAuth: true
+        },
+        component: () => import('@/pages/defineprops.vue')
     }
 ];
 
