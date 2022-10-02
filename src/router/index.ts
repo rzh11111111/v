@@ -60,6 +60,16 @@ const routes: Array<RouteRecordRaw> = [
             requireAuth: true
         },
         component: () => import('@/pages/defineprops.vue')
+    },
+    {
+        path: '/hooks',
+        name: 'hooks',
+        meta: {
+            title: 'mixin(hooks)',
+            keepAlive: true,
+            requireAuth: true
+        },
+        component: () => import('@/pages/hooks.vue')
     }
 ];
 
