@@ -5,21 +5,10 @@
    
     <div>
         <el-collapse v-model="activeName" accordion>
-      <el-collapse-item title="Consistency" name="1">
+      <el-collapse-item title="vue3功能" name="1">
         <el-scrollbar height="400px">
-    <p v-for="item in 20" :key="item" class="scrollbar-demo-item">{{ item }}</p>
+    <p v-for="item in activeItem" @click="topage(item.name)" :key="item.name" class="scrollbar-demo-item">点击跳转至{{ item.name }}页面</p>
   </el-scrollbar>
-        <router-link to="/login">点击跳转至login</router-link>
-    <br /><br />
-    <router-link to="/vueUse">点击跳转至vueUse页面</router-link>
-    <br /><br />
-    <router-link to="/request">点击跳转至request请求页面1</router-link>
-    <br /><br />
-    <router-link to="/toref">点击跳转至toref请求页面1</router-link>
-    <p>{{ checked }}</p>
-    <router-link to="/defineprops">点击跳转至defineprops请求页面1</router-link>
-    <br /><br />
-    <router-link to="/hooks">点击跳转至hooks请求页面1</router-link>
       </el-collapse-item>
       <el-collapse-item title="Feedback" name="2">
         <div>
@@ -62,9 +51,23 @@
 <script lang="ts" setup>
     // import { Component } from 'vue';
     import UsePinia from '@/components/UsePinia.vue';
+    import { useRouter } from 'vue-router';
+    const router = useRouter()
     const checked = ref(true);
    
     const activeName = ref('1')
+
+    const activeItem = reactive([
+        {name:'login',use:'login'},
+        {name:'vueUse',use:'vueUse'},
+        {name:'request',use:'request'},
+        {name:'toref',use:'toref'},
+        {name:'defineprops',use:'defineprops'},
+        {name:'hooks',use:'hooks'}
+    ])
+    const topage = (path:any)=>{
+        router.push({path:path,query:{id:1}})
+    }
 </script>
 <style>
     .scrollbar-demo-item {
