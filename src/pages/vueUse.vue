@@ -28,6 +28,15 @@
     //   deep: true,
     //   capacity: 10,
     // })
+    // 2、onClickOutside 关闭模态
+//     onClickOutside检测在元素之外进行的任何点击。根据我的经验，此功能最常见的用例是关闭任何模式或弹出窗口。
+
+// 通常，我们希望模态屏蔽网页的其余部分以吸引用户的注意力并限制错误。但是，如果他们确实在模态之外单击，我们希望它关闭。
+//3.useVModel 简化了 v-model 绑定
+//Vue 开发人员的一个常见用例是为组件创建自定义 v-model 绑定。这意味着我们的组件接受一个值作为 prop，并且每当该值被修改时，我们的组件都会向父级发出更新事件。
+//4、使用InterpObserver 跟踪元素可见性
+//5、useTransition 在值之间缓和
+// https://blog.csdn.net/qq_28550263/article/details/122138846 中文索引
 </script>
 <style scoped>
 button {
