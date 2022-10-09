@@ -7,8 +7,7 @@
   </template>
   
   <script lang="ts" setup>
-  import {defineProps,defineEmits,defineExpose,reactive,ref} from 'vue'
-  
+ 
   //接收父组件 传过来的值！
   const  props = defineProps({
     title: {

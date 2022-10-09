@@ -7,13 +7,12 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']
     ElCollapseItem: typeof import('element-plus/es')['ElCollapseItem']
     ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Subassembly: typeof import('./src/components/subassembly.vue')['default']
-    UsePinia: typeof import('./src/components/UsePinia.vue')['default']
+    UsePinia: typeof import('./src/components/usePinia.vue')['default']
   }
 }
