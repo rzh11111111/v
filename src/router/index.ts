@@ -42,14 +42,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/pages/request.vue')
     },
     {
-        path: '/toref',
-        name: 'toref',
+        path: '/torefVue',
+        name: 'torefVue',
         meta: {
             title: 'toref demo',
             keepAlive: true,
             requireAuth: true
         },
-        component: () => import('@/pages/toref.vue')
+        component: () => import('@/pages/torefVue.vue')
     },
     {
         path: '/defineprops',
@@ -62,14 +62,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/pages/defineprops.vue')
     },
     {
-        path: '/hooks',
-        name: 'hooks',
+        path: '/hooksVue',
+        name: 'hooksVue',
         meta: {
-            title: 'mixin(hooks)',
+            title: 'mixin(hooksVue)',
             keepAlive: true,
             requireAuth: true
         },
-        component: () => import('@/pages/hooks.vue')
+        component: () => import('@/pages/hooksVue.vue')
     }
 ];
 

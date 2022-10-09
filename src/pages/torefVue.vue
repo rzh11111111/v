@@ -11,7 +11,7 @@
         <el-button type="primary" @click="btn2">修改 name</el-button>
     </div>
 </template>
-<script setup>
+<script lang="ts" setup>
     import { ref, toRef } from 'vue';
 
     const name = '我是𝒆𝒅.';

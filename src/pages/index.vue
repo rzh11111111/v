@@ -61,9 +61,9 @@
         {name:'login',use:'login'},
         {name:'vueUse',use:'vueUse'},
         {name:'request',use:'request'},
-        {name:'toref',use:'toref'},
+        {name:'torefVue',use:'torefVue'},
         {name:'defineprops',use:'defineprops'},
-        {name:'hooks',use:'hooks'}
+        {name:'hooksVue',use:'hooksVue'}
     ])
     const topage = (path:any)=>{
         router.push({path:path,query:{id:1}})

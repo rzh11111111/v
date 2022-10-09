@@ -7,7 +7,7 @@ export  default function () {
     })
 
     //获取鼠标点击事件
-    function savePonint(event) {
+    function savePonint(event:any) {
         point.x = event.pageX
         point.y = event.pageY
         console.log(event.pageX, event.pageY)

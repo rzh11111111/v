@@ -6,7 +6,7 @@
     <h2>当前鼠标点击坐标为:x:{{ point.x }},y:{{ point.y }}</h2>
   </template>
   
-  <script setup>
+  <script lang="ts" setup>
   import {ref} from 'vue'
   //复用的usePoint
   import usePoint from "../hooks/usePoint"
