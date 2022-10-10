@@ -70,6 +70,16 @@ const routes: Array<RouteRecordRaw> = [
             requireAuth: true
         },
         component: () => import('@/pages/hooksVue.vue')
+    },
+    {
+        path: '/tsLearn',
+        name: 'tsLearn',
+        meta: {
+            title: 'mixin(tsLearn)',
+            keepAlive: true,
+            requireAuth: true
+        },
+        component: () => import('@/pages/tsLearn.vue')
     }
 ];
 

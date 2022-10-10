@@ -63,7 +63,8 @@
         {name:'request',use:'request'},
         {name:'torefVue',use:'torefVue'},
         {name:'defineprops',use:'defineprops'},
-        {name:'hooksVue',use:'hooksVue'}
+        {name:'hooksVue',use:'hooksVue'},
+        {name:'tsLearn',use:'tsLearn'}
     ])
     const topage = (path:any)=>{
         router.push({path:path,query:{id:1}})
