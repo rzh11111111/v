@@ -34,6 +34,7 @@ let xiaoZhi = reactive({
 let xiaoXiaoZhi = ref('小小志');
 console.log(xiaoXiaoZhi)
 
+//暴露被父组件ref的值
 defineExpose({
   xiaoZhi,
   xiaoXiaoZhi
